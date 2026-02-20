@@ -1,3 +1,42 @@
+h1{
+    font-size: 40px;
+    color: white;
+    background: #4A5C6A;
+    text-align: center;
+    width: 30%;
+    margin: 50px auto;
+    padding: 13px;
+    border-radius: 17px;
+
+}
+
+.container{
+    max-width: 1700px;  /*con esto puedo ajstar el tamano del container a lo ancho*/
+}
+.texto{
+    font-size: 22px;
+    text-align: center;
+    background-color: #f8f8f8; 
+    border: 2px solid #c6d4df; 
+    border-radius: 15px;        
+    padding: 20px;
+    padding-bottom: 2px;              
+    font-family: Arial, sans-serif; 
+    max-width: 75%;          
+    margin: 20px auto;          
+}
+
+.h2Historia{
+    font-size: 40px;
+    color: white;
+    background: #4A5C6A;
+    text-align: center;
+    width: 20%;
+    margin: 50px auto;
+    padding: 13px;
+    border-radius: 17px;
+}
+
 h2{
     font-size: 40px;
     color: white;
@@ -32,10 +71,12 @@ h2{
 }
 
 .gallery img {
-    aspect-ratio: 16/9;
-    object-fit: cover;
+    width: 100%;          /* ocupa todo el ancho de la columna */
+    height: 270px;        /* altura estándar */
+    object-fit: cover;    /* llena el rectángulo, mantiene proporción, recorta si es necesario */
     border-radius: 10px;
     transition: 0.3s ease;
+    display: block;
 }
 
 .gallery img:hover {
