@@ -32,23 +32,23 @@
         <a href="/a320"> <img src="{{ asset('imgs/a320.jpg') }}" class="img-fluid"> </a>
         </div>
         <div class="col">
-        <img src="{{ asset('imgs/a350.png') }}" class="img-fluid">
+        <a href="a350"><img src="{{ asset('imgs/a350.png') }}" class="img-fluid"> </a>
         </div>
         <div class="col">
-        <img src="{{ asset('imgs/a380.jpeg') }}" class="img-fluid">
+        <a href="a380"><img src="{{ asset('imgs/a380.jpeg') }}" class="img-fluid"> </a>
         </div>
     </div>
     <br>
     <br>
     <div class="row g-5">
         <div class="col">
-        <img src="{{ asset('imgs/737.jpg') }}">
+        <a href="/b737"><img src="{{ asset('imgs/737.jpg') }}"> </a>
         </div>
         <div class="col">
-        <img src="{{ asset('imgs/747.jpg') }}">
+        <a href="/b747"><img src="{{ asset('imgs/747.jpg') }}"> </a>
         </div>
         <div class="col">
-        <img src="{{ asset('imgs/777.jpg') }}">
+        <a href="/b777"> <img src="{{ asset('imgs/777.jpg') }}"> </a>
         </div>
     </div>
     <br>
