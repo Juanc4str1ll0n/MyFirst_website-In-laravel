@@ -10,21 +10,32 @@
     <title>My Air Web</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1F3A5F;">
+  <div class="container">
+    <a class="navbar-brand" href="#">La pagina en donde te convertiras en un aviation Lover !</a>
+    <div>
+      <a class="nav-link d-inline text-white" href="#">Inicio</a>
+      <a class="nav-link d-inline text-white" href="#">Aviones</a>
+      <a class="nav-link d-inline text-white" href="#carouselExampleSlidesOnly">Carrusel</a>
+      <a class="nav-link d-inline text-white" href="#">Historias fascinantes</a>
+    </div>
+  </div>
+</nav>
     <h1 > MY AIR WEB</h1>
     <br>
-
-    <h2 class="titulo2">Aviones modernos usados en la actualidad</h2>
+    <hr>
+    <h2 class="titulo2">Aviones comunmente usados en la actualidad</h2>
 
     <div class="container" id="container1">
     <div class="row g-5">
         <div class="col">
-        <img src="{{ asset('imgs/a320.jpg') }}">
+        <a href="/a320"> <img src="{{ asset('imgs/a320.jpg') }}" class="img-fluid"> </a>
         </div>
         <div class="col">
-        <img src="{{ asset('imgs/a350.png') }}">
+        <img src="{{ asset('imgs/a350.png') }}" class="img-fluid">
         </div>
         <div class="col">
-        <img src="{{ asset('imgs/a380.jpeg') }}">
+        <img src="{{ asset('imgs/a380.jpeg') }}" class="img-fluid">
         </div>
     </div>
     <br>
@@ -57,31 +68,34 @@
     </div>
 
     <br><br>
-
+    <hr>
     <h2 class="titulo3">Imagenes historicas en la aviacion</h2>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{{ asset('imgs/historic/concorde.jpg') }}" class="d-block w-100" alt="concorde" >  <!--alt es un texto alternativo-->
+    <div class="container my-5">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="{{ asset('imgs/historic/concorde.jpg') }}" class="d-block w-100" alt="concorde" >  <!--alt es un texto alternativo-->
+        </div>
+        <div class="carousel-item">
+        <img src="{{ asset('imgs/historic/dc3.jpg') }}" class="d-block w-100" alt="dc3" >
+        </div>
+        <div class="carousel-item">
+        <img src="{{ asset('imgs/a320.jpg') }}" class="d-block w-100" alt="a320" >
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="{{ asset('imgs/historic/dc3.jpg') }}" class="d-block w-100" alt="dc3" >
-    </div>
-    <div class="carousel-item">
-      <img src="{{ asset('imgs/a320.jpg') }}" class="d-block w-100" alt="a320" >
-    </div>
-  </div>
-   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
 <br>
+<hr>
+    <h2 class="titulo3">Historias Fascinantes</h2>
 <p> xd</p>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>

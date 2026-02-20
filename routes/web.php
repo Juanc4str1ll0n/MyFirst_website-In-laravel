@@ -7,24 +7,37 @@ Route::get('/', function () {
 });
 
 Route::get('/a380', function () {
-    return view('a380');
+    return view('airplanes/a380');
 });
 
 Route::get('/a320', function () {
-    return view('a320');
+    return view('airplanes/a320');
 });
 
 Route::get('/a350', function () {
-    return view('a350');
+    return view('airplanes/a350');
+});
+
+Route::get('/b737', function () {
+    return view('airplanes/b737');
 });
 
 Route::get('/b747', function () {
-    return view('b747');
+    return view('airplanes/b747');
 });
 
 Route::get('/b777', function () {
-    return view('b777');
+    return view('airplanes/b777');
 });
 
+Route::get('/atr72', function () {
+    return view('airplanes/atr72');
+});
 
+Route::get('/embraer', function () {
+    return view('airplanes/embraer');
+});
 
+Route::get('/beluga', function () {
+    return view('airplanes/beluga');
+});
