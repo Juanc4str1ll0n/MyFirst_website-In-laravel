@@ -6,23 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>My Air Web</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1F3A5F;">
-  <div class="container">
-    <a class="navbar-brand" href="#">La pagina en donde te convertiras en un aviation Lover !</a>
-    <div>
-      <a class="nav-link d-inline text-white" href="#">Inicio</a>
-      <a class="nav-link d-inline text-white" href="#">Aviones</a>
-      <a class="nav-link d-inline text-white" href="#carouselExampleSlidesOnly">Carrusel</a>
-      <a class="nav-link d-inline text-white" href="#">Historias fascinantes</a>
+    <div class="container">
+        <a class="navbar-brand" href="#">La pagina en donde te convertiras en un aviation Lover !</a>
+        <div class="d-flex align-items-center ms-auto">
+        <a class="nav-link d-inline text-white" href="#">Inicio</a>
+        <a class="nav-link d-inline text-white" href="#aviones">Aviones</a>
+        <a class="nav-link d-inline text-white" href="#carouselExampleSlidesOnly">Carrusel</a>
+        <a class="nav-link d-inline text-white" href="#historiasFascinantes">Historias fascinantes</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    ☰
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="/a320">A320</a></li>
+                    <li><a class="dropdown-item" href="/a350">A350</a></li>
+                    <li><a class="dropdown-item" href="/a380">A380</a></li>
+                    <li><a class="dropdown-item" href="/b737">B737</a></li>
+                    <li><a class="dropdown-item" href="/b747">B747</a></li>
+                    <li><a class="dropdown-item" href="/b777">B777</a></li>
+                    <li><a class="dropdown-item" href="/atr72">ATR-72</a></li>
+                    <li><a class="dropdown-item" href="/embraer">EMBRAER 195</a></li>
+                    <li><a class="dropdown-item" href="/beluga">AIRBUS BELUGA</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
-    <h1 > MY AIR WEB</h1>
-    <br>
+    </nav>
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col-md-3">
+        <img width="300px" height="300px"  src="{{ asset('imgs/logo1.png') }}">
+        </div>
+        <div class="col-md-9">
+            <h1 > MY AIR WEB</h1>
+        </div>
+        
+        </div>
+</div>
+    <pre class="texto">
+        Explora el fascinante mundo de la aviación a través de historias extraordinarias, avances tecnológicos y aeronaves que han marcado la historia. Desde gigantes del cielo 
+        hasta proezas que desafiaron los límites de la ingeniería, este blog reúne relatos, datos técnicos y curiosidades que muestran cómo el ser humano conquistó el aire y 
+        transformó la manera en que conectamos el mundo.
+    </pre>
+
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <p>"Cuando todo parezca estar en tu contra, recuerda que los aviones despegan con aire en contra y no a favor."</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+             <cite style="font-size: 20px"  title="Source Title">Henry Ford</cite>
+        </figcaption>
+    </figure>
     <hr>
     <h2 class="titulo2">Aviones comunmente usados en la actualidad</h2>
 
@@ -35,7 +73,7 @@
         <a href="a350"><img src="{{ asset('imgs/a350.png') }}" class="img-fluid"> </a>
         </div>
         <div class="col">
-        <a href="a380"><img src="{{ asset('imgs/a380.jpeg') }}" class="img-fluid"> </a>
+        <a id="aviones" href="a380"><img src="{{ asset('imgs/a380.jpeg') }}" class="img-fluid"> </a>
         </div>
     </div>
     <br>
@@ -45,7 +83,7 @@
         <a href="/b737"><img src="{{ asset('imgs/737.jpg') }}"> </a>
         </div>
         <div class="col">
-        <a href="/b747"><img src="{{ asset('imgs/747.jpg') }}"> </a>
+        <a  href="/b747"><img src="{{ asset('imgs/747.jpg') }}"> </a>
         </div>
         <div class="col">
         <a href="/b777"> <img src="{{ asset('imgs/777.jpg') }}"> </a>
@@ -111,7 +149,7 @@
 <br>
 <hr>
     <h2 class="titulo3">Historias Fascinantes</h2>
-<section class="container">
+<section class="container" id="historiasFascinantes">
     <div class="row g-5">
         <div class="col-md-6">
             <div class="card shadow h-100">
@@ -182,5 +220,11 @@
 
     </div>
 </section>
+<br><br>
+<footer class="text-center py-4" style="font-size: 20px; background-color:#1F3A5F; color:white;">
+    © 2026 My Air Web - Juan Castrillon - Facultad de Ingenieria, Universidad de Cundinamarca
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>

@@ -1,12 +1,13 @@
 h1{
     font-size: 90px;
     background: #4A5C6A;
-    width: 700px;       
+    width: 100%;       
     margin: 50px auto;   
     padding: 10px;
     text-align: center;
     border-radius: 17px;
     color: white;
+    margin-top: 90px;
 }
 
 .container{
@@ -15,6 +16,14 @@ h1{
 
 .card-body p{
     font-size: 20px;
+}
+
+.card {
+    border: none;
+}
+
+.card-body{
+    border-radius: 30px;
 }
 
 .titulo2{
@@ -60,4 +69,17 @@ body{
     max-width: 1200px;   
     margin: auto;  
     max-height: 700px;     
+}
+
+.texto {
+    font-size: 22px;
+    text-align: center;
+    background-color: #f8f8f8; 
+    border: 2px solid #c6d4df; 
+    border-radius: 15px;        
+    padding: 20px;
+    padding-bottom: 2px;              
+    font-family: Arial, sans-serif; 
+    max-width: 90%;          
+    margin: 20px auto;  
 }
