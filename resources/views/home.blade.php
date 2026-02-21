@@ -55,13 +55,13 @@
     <br><br>
     <div class="row g-5">
         <div class="col">
-        <img src="{{ asset('imgs/atr72.jpeg') }}">
+        <a href="/atr72"><img  src="{{ asset('imgs/atr72.jpeg') }}"></a>
         </div>
         <div class="col">
-        <img src="{{ asset('imgs/embraer.jpg') }}">
+        <a href="/embraer"><img src="{{ asset('imgs/embraer.jpg') }}"></a>
         </div>
         <div class="col">
-        <img src="{{ asset('imgs/beluga.jpg') }}">
+        <a href="/beluga"><img  src="{{ asset('imgs/beluga.jpg') }}"></a>
         </div>
     </div>
 

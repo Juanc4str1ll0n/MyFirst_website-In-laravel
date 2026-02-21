@@ -104,7 +104,7 @@
 
 <br><br>
 
-<footer class="text-center py-4" style="background-color:#1F3A5F; color:white;">
+<footer class="text-center py-4" style="font-size: 20px; background-color:#1F3A5F; color:white;">
     © 2026 My Air Web - Juan Castrillon - Facultad de Ingenieria, Universidad de Cundinamarca
 </footer>
 
