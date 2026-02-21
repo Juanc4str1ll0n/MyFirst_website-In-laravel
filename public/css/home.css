@@ -50,5 +50,6 @@ body{
 
 #carouselExampleSlidesOnly{
     max-width: 1200px;   
-    margin: auto;       
+    margin: auto;  
+    max-height: 700px;     
 }

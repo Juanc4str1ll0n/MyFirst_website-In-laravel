@@ -80,9 +80,27 @@
         <img src="{{ asset('imgs/historic/dc3.jpg') }}" class="d-block w-100" alt="dc3" >
         </div>
         <div class="carousel-item">
-        <img src="{{ asset('imgs/a320.jpg') }}" class="d-block w-100" alt="a320" >
+        <img src="{{ asset('imgs/historic/747Tigre.jpg') }}" class="d-block w-100" alt="a320" >
         </div>
+        <div class="carousel-item">
+        <img src="{{ asset('imgs/historic/concordellamas.png') }}" class="d-block w-100" alt="a320" >
         </div>
+        <div class="carousel-item">
+        <img src="{{ asset('imgs/historic/img1.webp') }}" class="d-block w-100" alt="a320" >
+        </div>
+        <div class="carousel-item">
+        <img src="{{ asset('imgs/historic/mh370.jpg') }}" class="d-block w-100" alt="a320" >
+        </div>
+        <div class="carousel-item">
+        <img src="{{ asset('imgs/historic/x15.jpg') }}" class="d-block w-100" alt="a320" >
+        </div>
+        <div class="carousel-item">
+        <img src="{{ asset('imgs/historic/zeppelin._xoptimizadax.jpg') }}" class="d-block w-100" alt="a320" >
+        </div>
+        <div class="carousel-item">
+        <img src="{{ asset('imgs/historic/antonovan225.jpg') }}" class="d-block w-100" alt="a320" >
+        </div>
+    </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
