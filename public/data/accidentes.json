@@ -14,5 +14,13 @@
     "location": "Pune, India",
     "fatalities": 5,
     "type": "Privado"
+  },
+  {
+    "date": "2026-03-02",
+    "flight": "Cessna 172 Hudson River",
+    "aircraft": "Cessna 172",
+    "location": "Hudson River, USA",
+    "fatalities": 0,
+    "type": "Aviacion General"
   }
 ]

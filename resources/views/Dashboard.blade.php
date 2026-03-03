@@ -14,6 +14,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="{{ asset('css/dash.css') }}">
     </head>
 
     <body>
@@ -48,7 +49,7 @@
                 <div class="col-md-5">
                     <div class="card shadow h-100">
                         <div class="card-body">
-                            <h3>El aterrizaje imposible del Gimli Glider</h3>
+                            <h2 id="titulo-card">Accidentes Aereos Recientes</h2>
                             <ul id="lista-accidentes"></ul>
                         </div>
                     </div>
@@ -56,14 +57,28 @@
 
                 <div class="col-md-5">
                     <div class="card shadow h-100">
-                        <div class="card-body">
-                            <h3>El Milagro del Hudson</h3>
-                            <p>
-                                card 2
+                        <div class="card-body text-center">
+                            <h2 id="titulo-card">¿Qué tan seguro es viajar?</h2>
+                            <p class="texto-card">
+                                Viajar en avión es uno de los medios de transporte más seguros del mundo.
+                                La aviación comercial está respaldada por estrictas normas internacionales,
+                                mantenimiento constante de las aeronaves y una formación altamente especializada
+                                para pilotos y tripulación. Organismos como la Organización de Aviación Civil
+                                Internacional establecen estándares globales que deben cumplir las aerolíneas y
+                                los países para garantizar la seguridad aérea.
                             </p>
-                        </div>
-                    </div>
+                            <hr>
+                            <img src="https://media.cnn.com/api/v1/images/stellar/prod/cnne-2218f4a5-130708164201-tsr-asiana-plane-getty-story-top.jpg?c=16x9&q=h_833,w_1480,c_fill" alt="img accidente" class="img-fluid">
+                            <hr>
+                            <p class="texto-card">
+                                Además, los aviones modernos incorporan sistemas redundantes,
+                                lo que significa que si un sistema falla, otro entra en funcionamiento automáticamente.
+                                Aeronaves como el Airbus A320 o el Boeing 737 están diseñadas para seguir operando incluso
+                                ante múltiples fallos técnicos, lo que reduce considerablemente los riesgos.
+                            </p>
                 </div>
+        </div>
+</div>
             </div>
         </main>
         <footer>

@@ -10,13 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const item = document.createElement("li");
 
-                item.classList.add("mb-3");
+                // item.classList.add("mb-3");
 
                 item.innerHTML = `
-                    <strong>${accidente.date}</strong><br>
-                    ✈ ${accidente.flight} (${accidente.aircraft})<br>
-                    📍 ${accidente.location}<br>
-                    ☠ ${accidente.fatalities} víctimas | ${accidente.type}
+                    <div class='accidente-item'>
+                        <strong>${accidente.date}</strong><br>
+                        🛩️ ${accidente.flight} (${accidente.aircraft})<br>
+                        📍 ${accidente.location}<br>
+                        💀 ${accidente.fatalities} víctimas | ${accidente.type}
+                        <hr>
+                    </div>
                 `;
 
                 lista.appendChild(item);

@@ -1,0 +1,22 @@
+.accidente-item{
+    font-size: 25px;
+}
+
+#titulo-card{
+    background-color: #1F3A5F;
+    color:rgb(255, 255, 255);
+    padding: 2%;
+}
+/* 
+.card p {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 25px;
+} */
+
+.texto-card{
+    text-align: justify;
+    margin: 15px 10px;
+    font-size: 25px;
+}
