@@ -1,3 +1,27 @@
+/* Estilos de la nav bar */
+.navbar {
+    font-size: 29px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.navbar .btn {
+    font-size: 18px;
+}
+
+.texto-bienvenida{
+    font-size: 40px;
+    color:#ffff;
+}
+
+.texto-usuario{
+    font-size: 40px;
+    color:#ffff;
+}
+
+
 .accidente-item{
     font-size: 25px;
 }
@@ -19,4 +43,27 @@
     text-align: justify;
     margin: 15px 10px;
     font-size: 25px;
+}
+
+h1{
+    font-size: 70px;
+    background: #4A5C6A;
+    width: 100%;       
+    margin: 60px auto;   
+    padding: 25px;
+    text-align: center;
+    border-radius: 17px;
+    color: white;
+    margin-top: 90px;
+}
+
+.titulo2{
+    font-size: 40px;
+    color: white;
+    background: #4A5C6A;
+    text-align: center;
+    width: 900px;
+    margin: 50px auto;
+    padding: 13px;
+    border-radius: 17px;
 }

@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const lista = document.getElementById("lista-accidentes");
 
             data.forEach(accidente => {
-
+                
                 const item = document.createElement("li");
-
+                
                 // item.classList.add("mb-3");
 
                 item.innerHTML = `

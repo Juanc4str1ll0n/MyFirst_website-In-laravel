@@ -19,38 +19,66 @@
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1F3A5F;">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1F3A5F; font-size:50px">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center gap-3">
-                        <span class="text-white fw-light">Bienvenido,</span>
-                        <span class="text-white fw-bold" id="user_name">Carlitos</span>
+                        <span class="texto-bienvenida">Bienvenido,</span>
+                        <span class="texto-usuario">Carlitos</span>
                     </div>
 
                     <!-- Centro -->
                     <div class="mx-auto">
-                        <span class="navbar-brand mb-0 h1 text-white">
-                            My Air Web - Dashboard VIP
+                        <span class="navbar-brand mb-0">
+                            My Air Web
                         </span>
                     </div>
 
-                    <!-- Lado derecho-->
+                    <!-- Logout-->
                     <div>
-                        <a href="#" class="btn btn-outline-light btn-sm">
+                        <span class="btn btn-outline-light btn-sm">
                             Cerrar sesión
-                        </a>
+                        </span>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-md-3">
+                        <img width="300px" height="300px"  src="{{ asset('imgs/logo1.png') }}">
+                    </div>
+                    <div class="col-md-9">
+                        <h1 > MY AIR WEB - VIP SECTION</h1>
+                    </div>
+                </div>
+            </div>
+            <hr>
 
+            <h2 class="titulo2">Crecimiento aereo en los proximos años</h2>
+
+            <div class="row g-5 justify-content-center">
+             <div class="col-md-8">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <img src="https://www.oneair.es/wp-content/uploads/2024/07/demanda-global-de-nuevos-aviones-en-la-flota-mundial-por-regiones.jpg" class="img-fluid" alt="grafico de crecimiento en aviacion">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <br><br>
+            <hr>
+
+            <h2 class="titulo2"> Seguridad aerea</h2>
+
+
             <div class="row g-5 justify-content-center">
                 <div class="col-md-5">
                     <div class="card shadow h-100">
                         <div class="card-body">
-                            <h2 id="titulo-card">Accidentes Aereos Recientes</h2>
+                            <h2 id="titulo-card" style="text-align: center">Accidentes Aereos Recientes</h2>
                             <ul id="lista-accidentes"></ul>
+                            <img src="https://www.aviacionnews.com/wp-content/uploads/2024/02/safety-rates-1.png" class="img-fluid" alt="grafico de accidentes aereos">
                         </div>
                     </div>
                 </div>
@@ -76,10 +104,40 @@
                                 Aeronaves como el Airbus A320 o el Boeing 737 están diseñadas para seguir operando incluso
                                 ante múltiples fallos técnicos, lo que reduce considerablemente los riesgos.
                             </p>
+                        </div>
+                    </div>
                 </div>
-        </div>
-</div>
             </div>
+            <br><br>
+            <hr>
+
+            <!--Seccion 2-->
+            <h2 class="titulo2">Noticias aereas</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                        <div class="card shadow h-100">
+                            <div class="card-body text-center noticia-card">
+                                <h2 id="titulo-card">¿Falta de controladores aereos en Bogota?</h2>
+                                <img src="https://i.ytimg.com/vi/10k4g4UaJ_k/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA3JTP6j1ElYZiRx4m4bAQ7syrNrw" class="img-fluid" alt="noticia">
+                                <div class="info-noticia">
+                                    <p>La escasez de controladores aéreos en Bogotá ha generado retrasos en varios vuelos, 
+                                        afectando a miles de pasajeros...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-shadow h-100">
+                        <div class="card-body text-center noticia card">
+                            <h2 id="titulo-card"> Crecimiento en la aviacion durante los proximos años</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </main>
         <footer>
           

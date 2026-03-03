@@ -1,16 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/dashboard', function(){
-    return view('Dashboard');
-});
 Route::get('/a380', function () {
     return view('airplanes/a380');
 });
@@ -47,11 +44,11 @@ Route::get('/beluga', function () {
     return view('airplanes/beluga');
 });
 
-//Configurar las rutas de controladores register
+//Rutas de controladores register
 Route::get('/register', [RegisterController::class, 'create']) -> name('register');
-Route::get('/register', [RegisterController::class, 'store'])->name('register.store');
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 
-//configurar las ruta de controladores login
+//Rutas de controladores login
 Route::get('/login', [LoginController::class, 'create'])->name('login');
 
 Route::post('/login', [LoginController::class, 'store'])
@@ -61,8 +58,4 @@ Route::post('/login', [LoginController::class, 'store'])
 //ruta para logout
 Route::get('/logout', [LoginController::class, 'destroy'])->name('logout');
 
-Route::get('/fanpage', function(){
-    return view('fanpage');
-}
-)->middleware('auth');
 

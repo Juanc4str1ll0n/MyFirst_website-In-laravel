@@ -11,12 +11,12 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1F3A5F;">
     <div class="container">
-        <a class="navbar-brand" href="#">La pagina en donde te convertiras en un aviation Lover !</a>
+        <a class="navbar-brand" href="/">My air web, La pagina en donde te convertiras en un aviation Lover !</a>
         <div class="d-flex align-items-center ms-auto">
-        <a class="nav-link d-inline text-white" href="#">Inicio</a>
-        <a class="nav-link d-inline text-white" href="#aviones">Aviones</a>
-        <a class="nav-link d-inline text-white" href="#carouselExampleSlidesOnly">Carrusel</a>
-        <a class="nav-link d-inline text-white" href="#historiasFascinantes">Historias fascinantes</a>
+        <a class="nav-link " href="#">Inicio</a>
+        <a class="nav-link " href="#aviones">Aviones</a>
+        <a class="nav-link " href="#carouselExampleSlidesOnly">Carrusel</a>
+        <a class="nav-link " href="#historiasFascinantes">Historias fascinantes</a>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     ☰
@@ -32,6 +32,11 @@
                     <li><a class="dropdown-item" href="/embraer">EMBRAER 195</a></li>
                     <li><a class="dropdown-item" href="/beluga">AIRBUS BELUGA</a></li>
                 </ul>
+            </div>
+
+            <div class="ms-3"> <!-- Espaciado a la izquierda de los botones -->
+                <a href="/login" class="btn btn-outline-light me-2">Login</a>
+                <a href="/register" class="btn btn-light">Register</a>
             </div>
         </div>
     </div>
