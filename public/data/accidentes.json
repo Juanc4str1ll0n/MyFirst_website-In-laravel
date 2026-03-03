@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-01-28",
+    "flight": "SATENA 9R8849",
+    "aircraft": "Beechcraft 1900D",
+    "location": "Ocaña, Colombia",
+    "fatalities": 15,
+    "type": "Comercial"
+  },
+  {
+    "date": "2026-02-10",
+    "flight": "Private Learjet 45XR",
+    "aircraft": "Learjet 45XR",
+    "location": "Pune, India",
+    "fatalities": 5,
+    "type": "Privado"
+  }
+]
