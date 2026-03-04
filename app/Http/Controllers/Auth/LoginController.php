@@ -3,13 +3,39 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
 {
-     // Mostrar formulario de login
     public function create()
     {
-        return view('auth.login'); // Asegúrate de que exista resources/views/auth/login.blade.php
+        return view('auth.login'); 
     }
+
+    public function store(Request $request){
+
+        $credentials = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|string'
+        ]);
+
+        if (!Auth::guard('web')->attempt($credentials)) {
+            throw ValidationException::withMessages([
+                'email' => 'Credenciales incorrectas'
+            ]);
+        }
+
+        return redirect()->route('dashboard');
+    }
+
+    public function destroy(Request $request){
+        Auth::guard('web')->logout();
+        
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/');
+    }
+    
 }
