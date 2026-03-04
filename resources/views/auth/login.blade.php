@@ -21,14 +21,14 @@
     </head>
 
     <body>
-        <header>
-            <!-- place navbar here -->
-        </header>
+        <a href="/" class="home-logo">
+            <img style= "width: 160px; height:160px" src="{{ asset('imgs/logo1.png') }}" alt="Home">
+        </a>
         <main>
             
             <!--D-FLEX es ima forma de prhamozar e;e,emtps de manera flexible-->
             <!--VH-100 altura de la ventana del navegador significa que el contenedor ocupa el 100% de la ventana-->
-            <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="d-flex justify-content-center align-items-center">
                 <div class="card" style="width: 500px">
                     <div class="card-body">
                         <img src="{{ asset('imgs/logo_3.png') }}" class="img-fluid" alt="logo my air web">

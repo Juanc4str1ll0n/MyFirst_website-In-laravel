@@ -1,0 +1,6 @@
+body{
+    background-image: url('../imgs/fondo_xs.png');
+    background-repeat: no-repeat; /*El background img por defecto se repite por eso esta propeidad lo muestra solo una vez como un solo fondo */
+    background-size: cover;
+
+}

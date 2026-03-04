@@ -5,11 +5,14 @@
     <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="{{ asset('imgs/logo_icono.png') }}">
+    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
 </head>
-<body class="bg-light">
-
+<body>
+<a href="/" class="home-logo">
+    <img style= "width: 160px; height:160px" src="{{ asset('imgs/logo1.png') }}" alt="Home">
+</a>
 <div class="container">
-    <div class="row justify-content-center align-items-center vh-100">
+    <div class="row justify-content-center align-items-center">
         <div class="col-md-5">
             <div class="card shadow">
                 <div class="card-body p-4">

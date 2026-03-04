@@ -122,7 +122,7 @@
                                 <h2 id="titulo-card">¿Falta de controladores aereos en Bogota?</h2>
                                 <img src="https://i.ytimg.com/vi/10k4g4UaJ_k/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA3JTP6j1ElYZiRx4m4bAQ7syrNrw" class="img-fluid" alt="noticia">
                                 <div class="info-noticia">
-                                    <p>La escasez de controladores aéreos en Bogotá ha generado retrasos en varios vuelos, 
+                                    <p style="font-size: 25px">La escasez de controladores aéreos en Bogotá ha generado retrasos en varios vuelos, 
                                         afectando a miles de pasajeros...
                                     </p>
                                 </div>
@@ -132,7 +132,8 @@
                 <div class="col-md-6">
                     <div class="card-shadow h-100">
                         <div class="card-body text-center noticia card">
-                            <h2 id="titulo-card"> Crecimiento en la aviacion durante los proximos años</h2>
+                            <h2 id="titulo-card"> Deficiencia de software en aviones</h2>
+                            <img src="https://i.ytimg.com/vi/elOHB3JFasw/maxresdefault.jpg" alt="software afectando aviones">
                         </div>
                     </div>
                 </div>

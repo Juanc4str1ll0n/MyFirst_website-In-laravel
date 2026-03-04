@@ -35,9 +35,10 @@
                 </ul>
             </div>
 
-            <div class="ms-3"> <!-- Espaciado a la izquierda de los botones -->
+            <div class="ms-4"> <!-- Espaciado a la izquierda de los botones -->
                 <a href="/login" class="btn btn-outline-light me-2">Login</a>
-                <a href="/register" class="btn btn-light">Register</a>
+                
+                <a href="/register" class="btn btn-outline-light me-2">Register</a>
             </div>
         </div>
     </div>
