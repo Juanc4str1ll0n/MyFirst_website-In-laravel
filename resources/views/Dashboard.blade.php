@@ -22,8 +22,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1F3A5F; font-size:50px">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center gap-3">
-                        <span class="texto-bienvenida">Bienvenido,</span>
-                        <span class="texto-usuario">Carlitos</span>
+                        <span class="texto-bienvenida">Bienvenido, {{ auth()->user()->name?? 'Usuario' }}</span>
                     </div>
 
                     <!-- Centro -->
@@ -35,9 +34,10 @@
 
                     <!-- Logout-->
                     <div>
-                        <span class="btn btn-outline-light btn-sm">
-                            Cerrar sesión
-                        </span>
+                        <form action="{{ route('logout') }}" method="POST" >
+                            @csrf
+                            <button type="submit" class="btn-primary">Cerrar Sesion</button>
+                        </form>
                     </div>
                 </div>
             </nav>

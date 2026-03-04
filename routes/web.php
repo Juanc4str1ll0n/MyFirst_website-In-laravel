@@ -50,12 +50,17 @@ Route::post('/register', [RegisterController::class, 'store'])->name('register.s
 
 //Rutas de controladores login
 Route::get('/login', [LoginController::class, 'create'])->name('login');
-
 Route::post('/login', [LoginController::class, 'store'])
--> middleware('')
+-> middleware('throttle:5,1')
 ->name('login.store');
 
 //ruta para logout
-Route::get('/logout', [LoginController::class, 'destroy'])->name('logout');
+Route::post('/logout', [LoginController::class, 'destroy'])->name('logout');
 
-
+//ruta para dashboard
+Route::get('/dashboard',
+    function(){
+        return view('dashboard');
+    }
+)->middleware('auth')
+->name('dashboard');

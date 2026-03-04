@@ -25,7 +25,9 @@ class LoginController extends Controller
             throw ValidationException::withMessages([
                 'email' => 'Credenciales incorrectas'
             ]);
+
         }
+        $request->session()->regenerate();
 
         return redirect()->route('dashboard');
     }

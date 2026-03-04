@@ -25,7 +25,7 @@
         </header>
         <main>
             
-            <!--D-FLEX es ima fpr,a de prhamozar e;e,emtps de manera flexible-->
+            <!--D-FLEX es ima forma de prhamozar e;e,emtps de manera flexible-->
             <!--VH-100 altura de la ventana del navegador significa que el contenedor ocupa el 100% de la ventana-->
             <div class="d-flex justify-content-center align-items-center vh-100">
                 <div class="card" style="width: 500px">
@@ -33,14 +33,28 @@
                         <img src="{{ asset('imgs/logo_3.png') }}" class="img-fluid" alt="logo my air web">
                         <h3 style="padding-left:120px">LOGIN</h3>
                         <br><br>
-                        <h3>Email</h3>
+                        <form method="POST"  action="{{ route('login.store') }}">
+                            @csrf
+                            <div class="mb-3">
+                                <label for="email">Email</label>
+                                <input value="{{ old('email') }}" class="form-control" type="email" name="email" placeholder="ejemplo@gmail.com" required>
+                            </div>
 
-                        <h3>Password</h3>
-
+                            <div class="mb-3">
+                                <label for="password">Password</label>
+                                <input class="form-control" type="password" name="password" required >
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                            @if ($errors->any())
+                            <div class="alert alert-danger">
+                                ERROR
+                            </div>
+                        @endif
+                        </form>
                     </div>
                 </div>
             </div>
-
         
         </main>
         <footer>
