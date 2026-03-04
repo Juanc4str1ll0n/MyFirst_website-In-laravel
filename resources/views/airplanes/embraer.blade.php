@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/airplanes.css') }}" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="{{ asset('imgs/logo_icono.png') }}">
 </head>
 
 <body style="background-color:#EDF7F6;">

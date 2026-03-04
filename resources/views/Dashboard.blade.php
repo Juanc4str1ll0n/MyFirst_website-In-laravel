@@ -15,6 +15,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="{{ asset('css/dash.css') }}">
+        <link rel="icon" type="image/png" href="{{ asset('imgs/logo_icono.png') }}">
     </head>
 
     <body>
@@ -139,8 +140,8 @@
             </div>
 
         </main>
-        <footer>
-          
+        <footer class="text-center py-4" style="font-size: 20px; background-color:#1F3A5F; color:white;">
+            © 2026 My Air Web - Juan Castrillon - Facultad de Ingenieria, Universidad de Cundinamarca
         </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
