@@ -20,8 +20,9 @@ class LoginController extends Controller
             'email' => 'required|email',
             'password' => 'required|string'
         ]);
+        
 
-        if (!Auth::guard('web')->attempt($credentials)) {
+        if (!auth()->attempt($credentials)) {
             throw ValidationException::withMessages([
                 'email' => 'Credenciales incorrectas'
             ]);
@@ -33,7 +34,7 @@ class LoginController extends Controller
     }
 
     public function destroy(Request $request){
-        Auth::guard('web')->logout();
+        auth()->logout();
         
         $request->session()->invalidate();
         $request->session()->regenerateToken();

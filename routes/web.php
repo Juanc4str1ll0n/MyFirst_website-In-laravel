@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('home');
@@ -64,3 +65,6 @@ Route::get('/dashboard',
     }
 )->middleware('auth')
 ->name('dashboard');
+
+Route::post('/posts', [PostController::class, 'store'])
+    ->middleware('auth');
