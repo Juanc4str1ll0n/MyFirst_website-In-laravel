@@ -32,7 +32,7 @@ class RegisterController extends Controller
         ]);
 
         // Logear al usuario automáticamente. ya puedo ejecutar operaciones coo auth::check, auth::user etc
-        auth()->login($user);
+        Auth::login($user);
 
         // Redirigir a dashboard
         return redirect()->route('dashboard');

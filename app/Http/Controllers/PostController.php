@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -11,7 +12,7 @@ class PostController extends Controller
     public function index()
     {
         // Obtenemos el usuario autenticado
-        $user = auth()->user();
+        $user = Auth::user();
 
         // Traemos sus posts más recientes y paginamos
         $posts = $user->posts()
@@ -43,7 +44,7 @@ class PostController extends Controller
         ]);
 
         // Creamos el post usando el usuario autenticado
-        auth()->user()->posts()->create($data);
+        Auth::user()->posts()->create($data);
 
         return redirect()->route('posts.index')
                          ->with('success', 'Post creado correctamente.');
@@ -54,12 +55,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        // Si quieres, aquí podrías chequear que el post pertenece al usuario
-        if ($post->user_id !== auth()->id()) {
-            abort(403, 'No autorizado');
-        }
-
-        return view('posts.show', compact('post'));
+        return false;
     }
 
     /**
@@ -67,11 +63,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        if ($post->user_id !== auth()->id()) {
-            abort(403, 'No autorizado');
-        }
-
-        return view('posts.edit', compact('post'));
+       return false;
     }
 
     /**
@@ -79,7 +71,8 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        if ($post->user_id !== auth()->id()) {
+
+        if ($post->user_id !== Auth::id()) {
             abort(403, 'No autorizado');
         }
 
@@ -101,7 +94,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        if ($post->user_id !== auth()->id()) {
+        if ($post->user_id !== Auth::id()) {
             abort(403, 'No autorizado');
         }
 

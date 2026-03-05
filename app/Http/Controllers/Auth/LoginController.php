@@ -13,7 +13,8 @@ class LoginController extends Controller
     {
         return view('auth.login'); 
     }
-
+    
+    
     public function store(Request $request){
 
         $credentials = $request->validate([
@@ -21,7 +22,6 @@ class LoginController extends Controller
             'password' => 'required|string'
         ]);
         
-
         if (!auth()->attempt($credentials)) {
             throw ValidationException::withMessages([
                 'email' => 'Credenciales incorrectas'
@@ -34,10 +34,12 @@ class LoginController extends Controller
     }
 
     public function destroy(Request $request){
+        Auth::logout();
         auth()->logout();
         
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect('/');
     }
+    
 }
